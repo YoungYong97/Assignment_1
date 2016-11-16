@@ -2,7 +2,7 @@ void drawShit()
 {
   noStroke();
   fill(0);
-  ellipse(width/2, height/2, cs++, cs++);
+  ellipse(width/2, height/2, cs, cs);
   if(cs == width/2 || cs == height/2)
   {
     cs = 10;
@@ -13,7 +13,7 @@ void drawShit()
     drawStars();
     fill(255, 60);
     noStroke();
-    ellipse(width/2, height/2, width, height);
+    rect(0, 0, width, height);
   }
 }
 
@@ -31,4 +31,23 @@ void drawStars()
       }
     }
   }
+}
+
+void polygon(float x, float y, float radius, int npoints) {
+  float angle = TWO_PI / npoints;
+  beginShape();
+  for (float a = 0; a < TWO_PI; a += angle) {
+    float sx = x + cos(a) * radius;
+    float sy = y + sin(a) * radius;
+    vertex(sx, sy);
+  }
+  endShape(CLOSE);
+}
+
+void drawHex()
+{
+  pushMatrix();
+  translate(width*0.1, height*0.1);
+  
+  popMatrix();
 }

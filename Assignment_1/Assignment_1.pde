@@ -5,10 +5,11 @@ void setup()
   background(0);
 }
 
-float cs = 10;
+float cs = 50;
 float starPercent = 0.0001;
 
 void draw()
 {
   drawShit();
+  drawHex();
 }
