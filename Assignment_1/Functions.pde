@@ -1,7 +1,7 @@
 void drawShit()
 {
   noStroke();
-  fill(0);
+  fill(255);
   ellipse(width/2, height/2, cs, cs);
   if(cs == width/2 || cs == height/2)
   {
@@ -48,6 +48,8 @@ void drawHex()
 {
   pushMatrix();
   translate(width*0.1, height*0.1);
-  
+  rotate(frameCount / -100.0);
+  fill(0);
+  polygon(0, 0, 70, 6);
   popMatrix();
 }

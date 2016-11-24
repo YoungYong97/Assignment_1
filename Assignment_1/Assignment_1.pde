@@ -7,9 +7,13 @@ void setup()
 
 float cs = 50;
 float starPercent = 0.0001;
+float x,y;
+Hexagons hex1 = new Hexagons(2,3);
 
 void draw()
 {
   drawShit();
   drawHex();
+  hex1.create();
+  hex1.render();
 }
