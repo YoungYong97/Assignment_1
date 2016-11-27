@@ -1,9 +1,4 @@
-void drawShit()
-{
-  noStroke();
-  fill(255);
-  ellipse(width/2, height/2, cs, cs);
-  if(cs == width/2 || cs == height/2)
+/* cs == height/2)
   {
     cs = 10;
   }
@@ -52,4 +47,4 @@ void drawHex()
   fill(0);
   polygon(0, 0, 70, 6);
   popMatrix();
-}
+}*/
