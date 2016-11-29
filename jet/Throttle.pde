@@ -21,7 +21,7 @@ class Throttle
     noFill();
     rectMode(CORNER);
     noStroke();
-    if (tHeight > 0.7*maxHeight)
+    if (tHeight > 0.9*maxHeight)
     {
       fill(255, 0, 0);
     }
@@ -37,7 +37,7 @@ class Throttle
     
     if ( tHeight > 5 )
     {
-      tHeight --;
+      tHeight -=2;
     }
   }
 }

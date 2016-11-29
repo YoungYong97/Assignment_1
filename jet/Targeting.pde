@@ -15,17 +15,17 @@ class Targeting
     this.ySize = ySize;
   }
   
-  void draw()
+  void draw(float xt, float yt)
   {
     rectMode(CENTER);
     noFill();
     stroke(255,0,0);
-    rect(x, y, size, size);
-    line(x-size, y, x+size, y);
-    line(x, y-size, x, y+size);
-    stroke(255, 255, 0);
+    rect(xt, yt, size, size);
+    line(xt-size, yt, xt+size, yt);
+    line(xt, yt-size, xt, yt+size);
+    stroke(0, 0, 255);
     rect(x, y, xSize/1.5, ySize/1.5);
-    stroke(0, 255, 0);
+    stroke(0, 0, 255);
     rect(x, y, xSize, ySize);
   }
 }
