@@ -1,5 +1,7 @@
 # Assignment_1
 
+Jet folder is where my assignment is.
+
 This is a Jet User Interface.
 
 Press the w key to increase throttle.
